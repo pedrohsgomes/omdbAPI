@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">OMDbAPI</string>
+    <string name="search_button">Pesquisar</string>
+    <string name="search_hint">Pesquisa pelo título do filme</string>
+    <string name="search_type">filme</string>
+    <string name="default_poster">http://www.imdb.com/images/nopicture/medium/film.png</string>
+    <string name="snackbar_title_not_found">Título do filme não encontrado</string>
+    <string name="snackbar_title_empty">Por favor informe o título do filme</string>
+    <string name="network_not_available">Sem Internet! Por favor, conecte à Internet.</string>
+    <string name="title">Título</string>
+    <string name="example_title">Teste de pesquisa OMDb</string>
+    <string name="released">Lançamento</string>
+    <string name="example_release">21 de novembro de 2018</string>
+    <string name="runtime">Duração</string>
+    <string name="example_runtime">155 min</string>
+    <string name="director">Diretores</string>
+    <string name="example_director">Steven Spelberg</string>
+    <string name="genre">Gênero</string>
+    <string name="example_genre">Ficção</string>
+    <string name="writer">Escritor(es)</string>
+    <string name="example_writer">Maria Ria</string>
+    <string name="actors">Ator(es)</string>
+    <string name="example_actors">João Silva</string>
+    <string name="plot">Plot</string>
+    <string name="example_full_plot">"zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"</string>
+</resources>
