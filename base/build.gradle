@@ -1,4 +1,5 @@
 apply plugin: 'com.android.feature'
+apply plugin: 'net.ltgt.apt'
 
 android {
     compileSdkVersion 27
@@ -18,14 +19,23 @@ android {
             buildConfigField("String", "API_KEY", "\"dc2f3433\"")
         }
     }
+
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+
+    dataBinding {
+        enabled = true
+    }
 }
 
-ext{
+ext {
     //version numbers
     junitVersion = '4.12'
     supportLibVersion = '27.1.1'
-    retroFitVersion= '2.0.2'
-    glideVersion='3.7.0'
+    retroFitVersion = '2.0.2'
+    glideVersion = '3.7.0'
+    requery_version = "1.5.1"
 }
 
 dependencies {
@@ -35,4 +45,9 @@ dependencies {
     implementation "com.squareup.retrofit2:converter-gson:${retroFitVersion}"
     application project(':app')
     feature project(':client')
+
+    implementation "io.requery:requery:${requery_version}"
+    implementation "io.requery:requery-android:${requery_version}"
+    annotationProcessor "io.requery:requery-processor:${requery_version}"
+    //apt "io.requery:requery-processor:${requery_version}"
 }

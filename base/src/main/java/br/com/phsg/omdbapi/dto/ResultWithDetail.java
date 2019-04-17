@@ -1,9 +1,10 @@
 package br.com.phsg.omdbapi.dto;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ResultWithDetail {
+public class ResultWithDetail implements Serializable {
     private List<Detail> movieDetailList;
     private String totalResults;
     private String Response;

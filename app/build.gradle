@@ -20,14 +20,26 @@ android {
             buildConfigField("String", "API_KEY", "\"dc2f3433\"")
         }
     }
+
+    lintOptions {
+        abortOnError false
+        disable 'InvalidPackage'
+    }
+
+    dataBinding {
+        enabled = true
+    }
 }
 
-ext{
-    //version numbers
-    junitVersion = '4.12'
-    supportLibVersion = '27.1.1'
-    retroFitVersion= '2.0.2'
-    glideVersion='3.7.0'
+buildscript {
+    ext {
+        //version numbers
+        junitVersion = '4.12'
+        supportLibVersion = '27.1.1'
+        retroFitVersion = '2.0.2'
+        glideVersion = '3.7.0'
+        requery_version = "1.5.1"
+    }
 }
 
 dependencies {

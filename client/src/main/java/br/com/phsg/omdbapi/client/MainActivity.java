@@ -17,10 +17,18 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import br.com.phsg.omdbapi.domain.DataApplication;
 import br.com.phsg.omdbapi.dto.ResultWithDetail;
 import br.com.phsg.omdbapi.service.PesquisaServiceOMDb;
 import br.com.phsg.omdbapi.service.RetrofitLoader;
 import br.com.phsg.omdbapi.utils.Comum;
+import io.requery.Persistable;
+import io.requery.android.sqlite.DatabaseSource;
+import io.requery.reactivex.ReactiveEntityStore;
+import io.requery.reactivex.ReactiveSupport;
+import io.requery.sql.Configuration;
+import io.requery.sql.EntityDataStore;
+import io.requery.sql.TableCreationMode;
 
 public class MainActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<ResultWithDetail>{
 
